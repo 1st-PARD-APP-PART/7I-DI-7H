@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 TextStyle title({bool responsible = false, double? height, Color? color}) {
   return TextStyle(
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: FontWeight.bold,
     fontFamily: 'SeoulHangang',
     color: color,
