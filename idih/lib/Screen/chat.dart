@@ -1,14 +1,4 @@
-import 'dart:convert';
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-
-// For the testing purposes, you should probably use https://pub.dev/packages/uuid.
-String randomString() {
-  final random = Random.secure();
-  final values = List<int>.generate(16, (i) => random.nextInt(255));
-  return base64UrlEncode(values);
-}
 
 class ChatPage extends StatefulWidget {
   const ChatPage({super.key});
@@ -19,11 +9,24 @@ class ChatPage extends StatefulWidget {
 
 class _ChatPage extends State<ChatPage> {
   @override
-  Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-          elevation: 0,
-        ),
-      );
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('퍼컬진단이 왜 필요한가'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+          )
+        ],
+      ),
+      body: ListView(
+        children: const [
+          Row(
+            children: [],
+          ),
+        ],
+      ),
+    );
+  }
 }
