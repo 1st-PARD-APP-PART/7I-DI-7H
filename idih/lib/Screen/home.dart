@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'chat.dart';
+import 'account.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,40 +15,60 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Row(
-          children: [
-            Text(
-              "거지촌",
-              style: TextStyle(
-                color: Colors.black,
-                fontWeight: FontWeight.bold,
-              ),
+      appBar: null, // AppBar를 없애기 위해 null로 설정
+      body: Column(
+        children: [
+          Container(
+            padding: EdgeInsets.all(16),
+            child: Column(
+              children: [
+                SizedBox(height: 135),
+                Text(
+                  '거지촌',
+                  style: TextStyle(
+                    fontSize: 34,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 120),
+                Row(
+                  children: [
+                    Image.asset(
+                      'assets/images/house.png',
+                      width: 203,
+                    ),
+                    SizedBox(width: 100),
+                    Icon(
+                      Icons.search,
+                      size: 27,
+                    ),
+                    SizedBox(width: 15),
+                    Icon(
+                      Icons.add,
+                      size: 28,
+                    ),
+                  ],
+                ),
+              ],
+
             ),
-          ],
-        ),
-        backgroundColor: const Color(0xFFE1DEDE),
-        elevation: 0,
-        actions: [
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.settings,
-                color: Colors.black,
-              )),
+
+          ),
+          Expanded(
+            child: ListView.separated(
+              itemCount: 6, // 리스트 아이템 개수에 맞게 수정해주세요.
+              separatorBuilder: (context, index) => Divider(
+                color: Colors.black, // 세로 구분선의 색상을 원하는 대로 설정할 수 있습니다.
+              ),
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text('Item $index'),
+                );
+              },
+            ),
+          ),
+
         ],
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: const Text('Go to Chat'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const ChatPage()),
-            );
-          },
-        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.black,
@@ -57,14 +78,15 @@ class _HomePageState extends State<HomePage> {
         onTap: (index) {
           switch (index) {
             case 0:
-              //Navigator.pushNamed(context, '/home');
+            //Navigator.pushNamed(context, '/home');
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AccountPage()));
               break;
             case 1:
-              //Navigator.push(context, MaterialPageRoute(builder: (context) => home()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
               break;
             case 2:
-              //Navigator.push(context, MaterialPageRoute(builder: (context) => Mypage()));
-              //Navigator.pushNamed(context, 'Mypage');
+            //Navigator.push(context, MaterialPageRoute(builder: (context) => Mypage()));
+            //Navigator.pushNamed(context, 'Mypage');
               break;
           }
           setState(() {
