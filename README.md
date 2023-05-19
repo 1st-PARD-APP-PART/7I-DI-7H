@@ -3,8 +3,10 @@
 ### Project Name
 > 거지촌
 ### about 거지촌
-> 러얼ㄴ얼ㄴㅇ렁ㄴ <br>
-> ㄹ어나린ㅇㄹㄴ
+> **Main 기능** <br>
+> 절약 노하우 공유 채팅방 / 절약 금액과 내역 제공 / 레벨을 통한 동기부여
+> **Effect**<br>
+> ㅇㄹㄴㅇㄹㅇ
 ### 기능 페이지
 <p align="left">
 <img src="https://github.com/1st-PARD-APP-PART/7I-DI-7H/assets/100616572/d3364721-ad4c-488b-9f3d-8bdbda87e22f" width=180>
