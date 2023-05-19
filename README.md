@@ -7,7 +7,11 @@
 > ㄹ어나린ㅇㄹㄴ
 ### 기능 페이지
 <p align="left">
-<img src="/Users/mac/Desktop/img1.png">
+<img src="https://github.com/1st-PARD-APP-PART/7I-DI-7H/assets/100616572/d3364721-ad4c-488b-9f3d-8bdbda87e22f" width=200>
+<img src="https://github.com/s1mjane/ossTeam/assets/100616572/eda95c7b-cc7e-48e4-9b01-677461bdb0ea" width=200>
+<img src="https://github.com/s1mjane/ossTeam/assets/100616572/41d82d5d-4e43-4a6f-b678-f501008976d1" width=200>
+  <img src="https://github.com/s1mjane/ossTeam/assets/100616572/fbdf53b1-200b-44b7-9fbd-ad97e6351156" width=200>
+  <img src="https://github.com/s1mjane/ossTeam/assets/100616572/97961122-498c-4983-a29f-5d5d8b38f677" width=200>
 </p>
 
 ### Team 7I-DI-7H
