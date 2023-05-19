@@ -14,9 +14,9 @@ class _ChatPage extends State<ChatPage> {
     return Scaffold(
       backgroundColor: const Color(0xFFECECEC),
       appBar: AppBar(
-        backgroundColor: const Color(0xFFECECEC),
+        backgroundColor: const Color(0xFFFFFFFF),
         foregroundColor: Colors.black,
-        title: const Text('퍼컬진단이 왜 필요한가'),
+        title: const Text('커피 좀 마시려 하는데...'),
         actions: [
           IconButton(
             onPressed: () {},
@@ -176,7 +176,9 @@ class _ChatPage extends State<ChatPage> {
                       ),
                     ],
                   ),
+
                   const SizedBox(height: 20),
+
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
@@ -209,6 +211,7 @@ class _ChatPage extends State<ChatPage> {
                       ),
                     ],
                   ),
+
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -237,6 +240,33 @@ class _ChatPage extends State<ChatPage> {
                               style: body2(),
                             ),
                           ),
+                          const SizedBox(
+                            height: 5,
+                          ),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              vertical: 8,
+                              horizontal: 12,
+                            ),
+                            decoration: BoxDecoration(
+                                color: const Color(0xFFD2D2D2),
+                                borderRadius: BorderRadius.circular(15)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: [
+                                Image.asset(
+                                    "assets/images/can.png",
+                                  width: 30,
+
+                                ),
+                                SizedBox(width: 5),
+                                Text(
+                                  "1",
+                                  style: body2(),
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                       const SizedBox(width: 10),
@@ -248,6 +278,7 @@ class _ChatPage extends State<ChatPage> {
                       ),
                     ],
                   ),
+
                   const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -289,6 +320,7 @@ class _ChatPage extends State<ChatPage> {
                     cursorColor: const Color(0xFFE0C6A5),
                     decoration: InputDecoration(
                       contentPadding:
+
                           const EdgeInsets.symmetric(horizontal: 20),
                       filled: true,
                       fillColor: const Color(0xFFD2D2D2),

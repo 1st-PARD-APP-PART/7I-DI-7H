@@ -1,7 +1,12 @@
+
 import 'package:flutter/material.dart';
 import 'package:idih/Screen/chat.dart';
+import 'package:idih/util/text_styles.dart';
 
 import 'account.dart';
+
+import 'myProfile.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -12,68 +17,229 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _selectedIndex = 1;
+  List<Map<String,dynamic>> datas = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: null, // AppBar를 없애기 위해 null로 설정
-      body: Column(
-        children: [
+
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(317.0),
+        child: AppBar(
+          backgroundColor: Color(0xFFFFFFFF),
+
+          flexibleSpace: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.all(30),
+                color: Color(0xFFFFFFFF),
+                child: Column(
+                    children: [
+                    SizedBox(height: 100),
+                Text('거지촌',
+                    style: title()),
+                SizedBox(height: 60),
+                Row(children: [
+                  Image.asset('assets/images/house.png', width: 203),
+                  SizedBox(width: 90),
+                  Column(children: [
+                    SizedBox(height: 45),
+                    Row(children: [
+                      Icon(Icons.search, size: 27),
+                      SizedBox(width: 15),
+                      Icon(Icons.add, size: 28)
+                    ],),
+                  ],)
+                ],),])
+              )
+            ],
+          ),
+        ),
+      ),
+      body: SingleChildScrollView(
+        child: Column(children: [
           Container(
-            padding: const EdgeInsets.all(16),
+            padding: EdgeInsets.all(30),
+            color: Color(0xFFFFFFFF),
             child: Column(
               children: [
-                const SizedBox(height: 135),
-                const Text(
-                  '거지촌',
-                  style: TextStyle(
-                    fontSize: 34,
-                    fontWeight: FontWeight.bold,
-                  ),
+                // Divider(
+                //   thickness: 1,
+                //   color: Colors.black.withOpacity(0.1),
+                // ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('커피 좀 마시려 하는데...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 95),
+                      Text('8/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
                 ),
-                const SizedBox(height: 120),
-                Row(
-                  children: [
-                    Image.asset(
-                      'assets/images/house.png',
-                      width: 203,
-                    ),
-                    const SizedBox(width: 100),
-                    const Icon(
-                      Icons.search,
-                      size: 27,
-                    ),
-                    const SizedBox(width: 15),
-                    const Icon(
-                      Icons.add,
-                      size: 28,
-                    ),
-                  ],
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('오후에 비 온다는데 좀 더 기다리...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 30),
+                      Text('7/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
                 ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('저를 운반해준 어르신께 감사의 의미...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 5),
+                      Text('8/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
+                ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('바쁘다바빠 현대사회 속 단비같은...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 25),
+                      Text('5/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
+                ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('틴트사도 됩니까? 입술 꾹 물어서 빨...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 3),
+                      Text('14/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
+                ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('우리에겐 여행 유튜브가 있습니다...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 20),
+                      Text('8/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
+                ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('우리에겐 여행 유튜브가 있습니다...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 20),
+                      Text('2/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+                Divider(
+                  thickness: 1,
+                  color: Colors.black.withOpacity(0.1),
+                ),
+                Row(children: [
+                  Column(children: [
+                    SizedBox(height:6),
+                    Row(children: [
+                      Image.asset('assets/images/fly.png'),
+                      SizedBox(width: 28,),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ChatPage()));
+                        },
+                        child: Text('우리에겐 여행 유튜브가 있습니다...', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400, color: Colors.black)),),
+                      SizedBox(width: 20),
+                      Text('9/15', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400))
+                    ],),
+                    SizedBox(height: 6),
+                  ],)
+                ],),
+
               ],
             ),
           ),
-          Expanded(
-            child: ListView.separated(
-              itemCount: 6, // 리스트 아이템 개수에 맞게 수정해주세요.
-              separatorBuilder: (context, index) => const Divider(
-                color: Colors.black, // 세로 구분선의 색상을 원하는 대로 설정할 수 있습니다.
-              ),
-              itemBuilder: (context, index) {
-                return ListTile(
-                  title: Text('Item $index'),
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const ChatPage(),
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-        ],
+        ],),
       ),
+
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFFFAFAFA),
         selectedItemColor: Colors.black,
         selectedFontSize: 0,
         unselectedFontSize: 0,
@@ -81,18 +247,15 @@ class _HomePageState extends State<HomePage> {
         onTap: (index) {
           switch (index) {
             case 0:
-              //Navigator.pushNamed(context, '/home');
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const AccountPage()));
               break;
             case 1:
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const HomePage()));
-              //Navigator.pushNamed(context, '/home');
               break;
             case 2:
-              //Navigator.push(context, MaterialPageRoute(builder: (context) => Mypage()));
-              //Navigator.pushNamed(context, 'Mypage');
+              Navigator.push(context, MaterialPageRoute(builder: (context) => myProfile()));
               break;
           }
           setState(() {
