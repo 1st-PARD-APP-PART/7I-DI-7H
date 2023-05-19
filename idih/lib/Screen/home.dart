@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../util/text_styles.dart';
 import 'chat.dart';
 
 class HomePage extends StatefulWidget {
@@ -11,14 +10,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   int _selectedIndex = 1;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Row(
+        title: const Row(
           children: [
             Text(
               "거지촌",
@@ -29,23 +27,24 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
-        backgroundColor: Color(0xFFE1DEDE),
+        backgroundColor: const Color(0xFFE1DEDE),
         elevation: 0,
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(
-            Icons.settings,
-            color: Colors.black,
-          )),
+          IconButton(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.settings,
+                color: Colors.black,
+              )),
         ],
       ),
       body: Center(
-
         child: ElevatedButton(
-          child: Text('Go to Chat'),
+          child: const Text('Go to Chat'),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ChatPage()),
+              MaterialPageRoute(builder: (context) => const ChatPage()),
             );
           },
         ),
