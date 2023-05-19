@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:idih/Screen/chat.dart';
 
 import 'account.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,55 +19,58 @@ class _HomePageState extends State<HomePage> {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Column(
               children: [
-                SizedBox(height: 135),
-                Text(
+                const SizedBox(height: 135),
+                const Text(
                   '거지촌',
                   style: TextStyle(
                     fontSize: 34,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 120),
+                const SizedBox(height: 120),
                 Row(
                   children: [
                     Image.asset(
                       'assets/images/house.png',
                       width: 203,
                     ),
-                    SizedBox(width: 100),
-                    Icon(
+                    const SizedBox(width: 100),
+                    const Icon(
                       Icons.search,
                       size: 27,
                     ),
-                    SizedBox(width: 15),
-                    Icon(
+                    const SizedBox(width: 15),
+                    const Icon(
                       Icons.add,
                       size: 28,
                     ),
                   ],
                 ),
               ],
-
             ),
-
           ),
           Expanded(
             child: ListView.separated(
               itemCount: 6, // 리스트 아이템 개수에 맞게 수정해주세요.
-              separatorBuilder: (context, index) => Divider(
+              separatorBuilder: (context, index) => const Divider(
                 color: Colors.black, // 세로 구분선의 색상을 원하는 대로 설정할 수 있습니다.
               ),
               itemBuilder: (context, index) {
                 return ListTile(
                   title: Text('Item $index'),
+                  onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const ChatPage(),
+                    ),
+                  ),
                 );
               },
             ),
           ),
-
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -78,15 +81,18 @@ class _HomePageState extends State<HomePage> {
         onTap: (index) {
           switch (index) {
             case 0:
-            //Navigator.pushNamed(context, '/home');
-              Navigator.push(context, MaterialPageRoute(builder: (context) => AccountPage()));
+              //Navigator.pushNamed(context, '/home');
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const AccountPage()));
               break;
             case 1:
-              Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const HomePage()));
+              //Navigator.pushNamed(context, '/home');
               break;
             case 2:
-            //Navigator.push(context, MaterialPageRoute(builder: (context) => Mypage()));
-            //Navigator.pushNamed(context, 'Mypage');
+              //Navigator.push(context, MaterialPageRoute(builder: (context) => Mypage()));
+              //Navigator.pushNamed(context, 'Mypage');
               break;
           }
           setState(() {
