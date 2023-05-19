@@ -16,9 +16,9 @@ fonts:
   - family: NanumGothic
     fonts:
       - asset: assets/fonts/NanumGothic.ttf
-  - family: NanumSqaureNeo
+  - family: SeoulHangang
     fonts:
-      - asset: assets/fonts/NanumSquareNeoOTF-Rg.otf
+      - asset: assets/fonts/서울한강 장체Bttf
   - family: NotoSansMonoCJK
     fonts:
       - asset: assets/fonts/NotoSansMonoCJKkr-Regular.otf

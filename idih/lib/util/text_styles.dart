@@ -4,7 +4,7 @@ TextStyle title({bool responsible = false, double? height, Color? color}) {
   return TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.bold,
-    fontFamily: 'NanumSquareNeo',
+    fontFamily: 'SeoulHangang',
     color: color,
     height: height,
   );
