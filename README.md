@@ -21,11 +21,19 @@
   <img src="https://github.com/s1mjane/ossTeam/assets/100616572/97961122-498c-4983-a29f-5d5d8b38f677" width=180>
 </p>
 
-`1번 페이지` Splash : 3초간 프로그램 로딩 화면 동작
-<br>`2번 페이지` Chatting Room List : 채팅방 리스트
-<br>`3번 페이지` Chat : 공감기능이 들어간 채팅방
-<br>`4번 페이지` Save List : 캐릭터 레벨 및 절약내역 리스트
-<br>`5번 페이지` Save Add : 절약내역 추가
+- `1번 페이지` Splash : 3초간 프로그램 로딩 화면 동작
+
+
+- `2번 페이지` Chatting Room List : 채팅방 리스트
+
+
+- `3번 페이지` Chat : 공감기능이 들어간 채팅방
+
+
+- `4번 페이지` Save List : 캐릭터 레벨 및 절약내역 리스트
+
+
+- `5번 페이지` Save Add : 절약내역 추가
 
 ## Team 7I-DI-7H
 > 기획자<br> 🙋🏻‍♀️✨ 김민영  `minyoung.k@handong.ac.kr`<br>
