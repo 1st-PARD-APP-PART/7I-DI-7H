@@ -28,15 +28,15 @@
 <br>`5번 페이지` Save Add : 절약내역 추가
 
 ## Team 7I-DI-7H
-> 기획자<br> 🙋🏻‍♀️ 김민영  `minyoung.k@handong.ac.kr`<br>
+> 기획자<br> 🙋🏻‍♀️✨ 김민영  `minyoung.k@handong.ac.kr`<br>
 
-> 디자이너<br> 🧑🏻‍🎨 조  민  `hgu.hi.min@gmail.com`<br>
+> 디자이너<br> 🧑🏻‍🎨✨ 조  민  `hgu.hi.min@gmail.com`<br>
 
 > 개발자<br>
-> 🧑🏻‍💻 구현우  `21800030@handong.ac.kr` <br>
-> 🧑🏻‍💻 김진서  `eunoia@handong.ac.kr` <br>
-> 👩🏻‍💻 심재인  `s1mjane@handong.ac.kr` <br>
-> 🧑🏻‍💻 김민혁  `kkmin11203@gmail.com`
+> 🧑🏻‍💻✨ 구현우  `21800030@handong.ac.kr` <br>
+> 🧑🏻‍💻✨ 김진서  `eunoia@handong.ac.kr` <br>
+> 👩🏻‍💻✨ 심재인  `s1mjane@handong.ac.kr` <br>
+> 🧑🏻‍💻✨ 김민혁  `kkmin11203@gmail.com`
 
 ## Languages and Tools
 <p align="left"> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
