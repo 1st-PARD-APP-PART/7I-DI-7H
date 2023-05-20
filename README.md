@@ -14,11 +14,11 @@
 > 절약 노하우 공유 채팅방 / 절약 금액과 내역 제공 / 레벨을 통한 동기부여 <br>
 ## 기능 페이지
 <p align="left">
-<img src="https://github.com/1st-PARD-APP-PART/7I-DI-7H/assets/100616572/d3364721-ad4c-488b-9f3d-8bdbda87e22f" width=180>
-<img src="https://github.com/s1mjane/ossTeam/assets/100616572/eda95c7b-cc7e-48e4-9b01-677461bdb0ea" width=180>
-<img src="https://github.com/s1mjane/ossTeam/assets/100616572/41d82d5d-4e43-4a6f-b678-f501008976d1" width=180>
-  <img src="https://github.com/s1mjane/ossTeam/assets/100616572/fbdf53b1-200b-44b7-9fbd-ad97e6351156" width=180>
-  <img src="https://github.com/s1mjane/ossTeam/assets/100616572/97961122-498c-4983-a29f-5d5d8b38f677" width=180>
+<img src="https://github.com/1st-PARD-APP-PART/7I-DI-7H/assets/100616572/d3364721-ad4c-488b-9f3d-8bdbda87e22f" width=160>
+<img src="https://github.com/s1mjane/ossTeam/assets/100616572/eda95c7b-cc7e-48e4-9b01-677461bdb0ea" width=160>
+<img src="https://github.com/s1mjane/ossTeam/assets/100616572/41d82d5d-4e43-4a6f-b678-f501008976d1" width=160>
+  <img src="https://github.com/s1mjane/ossTeam/assets/100616572/fbdf53b1-200b-44b7-9fbd-ad97e6351156" width=160>
+  <img src="https://github.com/s1mjane/ossTeam/assets/100616572/97961122-498c-4983-a29f-5d5d8b38f677" width=160>
 </p>
 
 - `1번 페이지` Splash : 3초간 프로그램 로딩 화면 동작
